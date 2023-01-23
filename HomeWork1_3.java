@@ -17,28 +17,53 @@ public class HomeWork1_3 {
                 System.out.println();
                 System.out.print("Введите действие (+ - * /) или q - для выхода из программы: ");
                 String act = iScanner2.nextLine();
-                if (act.equals("+")) {
-                    Sum(number1, number2);
-                    temp = false;
+                switch (act) {
+                    case "+":
+                        Sum(number1, number2);
+                        temp = false;
+                        break;
+                    case "-":
+                        Sub(number1, number2);
+                        temp = false;
+                        break;
+                    case "*":
+                        Mult(number1, number2);
+                        temp = false;
+                        break;
+                    case "/":
+                        Div(number1, number2);
+                        temp = false;
+                        break;
+                    case "q":
+                        System.out.println("До свидания");
+                        temp = false;
+                        temp2 = false;
+                        break;
+                    default:
+                        System.out.println("Вы ввели неккоретное значение. Повторите попытку!");
                 }
-                else if (act.equals("-")) {
-                    Sub(number1, number2);
-                    temp = false;
-                }
-                else if (act.equals("*")) {
-                    Mult(number1, number2);
-                    temp = false;
-                }
-                else if (act.equals("/")) {
-                    Div(number1, number2);
-                    temp = false;
-                }
-                else if (act.equals("q")){
-                    System.out.println("До свидания");
-                    temp = false;
-                    temp2 = false;
-                } 
-                else System.out.println("Вы ввели неккоретное значение. Повторите попытку!");
+                // if (act.equals("+")) {
+                //     Sum(number1, number2);
+                //     temp = false;
+                // }
+                // else if (act.equals("-")) {
+                //     Sub(number1, number2);
+                //     temp = false;
+                // }
+                // else if (act.equals("*")) {
+                //     Mult(number1, number2);
+                //     temp = false;
+                // }
+                // else if (act.equals("/")) {
+                //     Div(number1, number2);
+                //     temp = false;
+                // }
+                // else if (act.equals("q")){
+                //     System.out.println("До свидания");
+                //     temp = false;
+                //     temp2 = false;
+                // } 
+                // else System.out.println("Вы ввели неккоретное значение. Повторите попытку!");
             }
         }
         iScanner2.close();
