@@ -6,7 +6,7 @@ public class HomeWork3_3 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         RandList(list);
-        System.out.println("Исходный массив");
+        System.out.println("Исходный список");
         PrintList(list);
         MinElementList(list);
         MaxElementList(list);
@@ -35,7 +35,7 @@ public class HomeWork3_3 {
                 minElement = list.get(i);
             }
         }
-        System.out.println("Минимальное значение в исходном массиве: " + minElement);
+        System.out.println("Минимальное значение в исходном списке: " + minElement);
     }
 
     public static void MaxElementList(List<Integer> list) {
@@ -45,7 +45,7 @@ public class HomeWork3_3 {
                 maxElement = list.get(i);
             }
         }
-        System.out.println("Максимальное значение в исходном массиве: " + maxElement);
+        System.out.println("Максимальное значение в исходном списке: " + maxElement);
     }
 
     public static void AverageElementsList(List<Integer> list) {
@@ -54,6 +54,6 @@ public class HomeWork3_3 {
             double intDoub = integer;
             sumAver = sumAver + intDoub/(list.size());
         }
-        System.out.println("Среднее арифметическое элементов массива: " + sumAver);
+        System.out.println("Среднее арифметическое элементов списка: " + sumAver);
     }
 }

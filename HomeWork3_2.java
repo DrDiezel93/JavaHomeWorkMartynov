@@ -6,15 +6,15 @@ public class HomeWork3_2 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         RandList(list);
-        System.out.println("Исходный массив");
+        System.out.println("Исходный список");
         PrintList(list);
         System.out.println();
         List<Integer> listNew = NewListArr(list);
         if (listNew.size() == 0) {
-            System.out.println("В исходном массиве все числа четные");
+            System.out.println("В исходном списке все числа четные");
         }
         else{
-            System.out.println("Массив без четных чисел");
+            System.out.println("Список без четных чисел");
             PrintList(listNew);
         }
     }
