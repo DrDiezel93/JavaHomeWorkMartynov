@@ -6,8 +6,9 @@ public class HomeWork2_4 {
     public static void main(String[] args) throws IOException {
         String encoding = System.getProperty("console.encoding", "cp866");
         Logger logger = Logger.getLogger(HomeWork2_4.class.getName());
-        FileHandler fh = new FileHandler("log.txt");
+        FileHandler fh = new FileHandler("log.log");
         logger.addHandler(fh);
+        logger.setUseParentHandlers(false);
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
         Scanner iScanner = new Scanner(System.in, encoding);
