@@ -45,8 +45,7 @@ public class HomeWork6_laptop1 {
     void PrintABC(String num){
             if(num.equals(name)){
                 System.out.println('|' + name + '|' + weight + '|' + color + '|' + memory + '|' + price);
+                System.out.println();
         }
-        
     }
-
 }
